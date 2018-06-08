@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src='Pictures.js'></script>
+	</head>
+		
+	<body background='../support/backdrops/backdrop07.jpg' bgcolor=white>
+
+		
+		<center><h1>
+			     <img src=../support/tags/photogallery.gif border=0>
+		</h1></center>
+
+
+		<a href="javascript:window.history.go(-1)"><img src=../support/tags/back_PG2.gif border=0></a>
+
+		<table align=center height=100%>
+			<tr valign=center>
+				<td>
+<script>			
+
+	var a = document.location.href
+	if(a.indexOf('?image=')>0){
+		a = a.split('?image=')
+		document.write("<img src='"+a[1]+"'>")
+	}else{
+		document.write("<img src='../images/Stolen.jpg'>")
+	}
+	
+
+</script>			
+				</td>
+			</tr>
+
+		</table>
+
+
+	</body>
+
+</html>
