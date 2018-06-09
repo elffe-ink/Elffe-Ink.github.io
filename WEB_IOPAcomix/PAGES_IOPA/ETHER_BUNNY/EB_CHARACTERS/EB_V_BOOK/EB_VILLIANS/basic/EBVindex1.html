@@ -1,0 +1,95 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/EBV_book_front_cover.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_01WFBFHa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_01WFBFHb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_02CNb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_02CNa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_03SIa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_03SIb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_04CvMa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_04CvMb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_05OKa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_05OKb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_06MADa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_06MADb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_07TBa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_07TBb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_08NVb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_08NVa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_09BLPa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_09BLPb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_10AAa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_10AAb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_11MMa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_11MMb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_12ANDb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_12ANDa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_13NPa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_13NPb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_14DTb.jpg)"></div>
+			<div style="background-image:url(pages/EBV_page_14DTa.jpg)"></div>
+			<div style="background-image:url(pages/EBV_the_back_cover.jpg)"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
